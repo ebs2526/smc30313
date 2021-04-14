@@ -3,27 +3,27 @@ import java.util.Scanner;
 
 public class Number {
 	public static void main(String[] args) {
-		System.out.println("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50±îÁö): ");
-		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
+		System.out.println("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50ê¹Œì§€): ");
+		Scanner sc = new Scanner(System.in); // ìŠ¤ìºë„ˆ ìƒì„±
+		int a = sc.nextInt();  //aì— ìˆ«ìë¥¼ ì…ë ¥
 		int[] b;
 		int diff=0;
 		b = new int[10];
 	
 		
 		for (int i=0; i<10;i++) {
-		 b[i] = (int) (Math.random()* 50) + 1;
+		 b[i] = (int) (Math.random()* 50) + 1; //1~50ê¹Œì§€ ëœë¤í•œ ìˆ«ì ìƒì„± (10ë²ˆ ë°˜ë³µ)
 		System.out.print(b[i]+" ");
 
 		}
 
 		for (int j=0; j<10; j++) {
 			if(b[j] == a){
-				System.out.println("´çÃ·");
+				System.out.println("ë‹¹ì²¨");
 				diff = 1;
 			}
 		}
-		if(diff ==0) System.out.println("²Î");
+		if(diff ==0) System.out.println("ê½"); //1ì´ë©´ ë‹¹ì²¨ì´ê³  0ì´ë©´ ê½
 		sc.close();
 		
 		
